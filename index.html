@@ -75,14 +75,69 @@
         border-radius: 50%; /* Optional: if you want a circular image */
         border: 3px solid #2c3e50; /* Optional: if you want a border around the image */
       }
+      .social-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .social-link {
+      margin: 0 10px;
+    }
+
+    .social-link a img {
+      width: 75px;
+      height: auto;
+      border-radius: 100%;
+      margin: 2vh 0;
+    }
+
+    .headerMainImg{
+      text-align: center;
+    }
     </style>
   </head>
   <body>
     <!-- Header Section -->
     <header>
-      <div class="container">
-        <img src="nathanBlue.jpg" alt="Nathan Clark" class="profile-img" />
+      <div class="container headerMainImg">
+        <img src="images/nathanBlue.jpg" alt="Nathan Clark" class="profile-img" />
         <h1>Nathan Clark - Technical Analyst</h1>
+        <div class="social-links">
+          <div class="social-link">
+            <a
+              href="https://www.linkedin.com/in/nathan-clark-4a9b6417a/"
+              target="_blank"
+            >
+              <img
+                id="linkedin-logo"
+                src="images/linkedin.png"
+                alt="LinkedIn Logo"
+              />
+            </a>
+          </div>
+          <div class="social-link">
+            <a
+              href="https://www.linkedin.com/in/nathan-clark-4a9b6417a/"
+              target="_blank"
+            >
+              <img id="my-photo" src="images/nathanBlue.jpg" alt="My Photo" />
+            </a>
+          </div>
+          <div class="social-link">
+            <a href="https://github.com/nclarkicstar" target="_blank">
+              <img id="github-logo" src="images/github.png" alt="GitHub Logo" />
+            </a>
+          </div>
+          <div class="social-link">
+            <a href="mailto:nathanclark88@yahoo.com" target="_blank">
+              <img id="github-logo" src="images/email.png" alt="GitHub Logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+    
         <nav>
           <ul>
             <li><a href="#home">Home</a></li>

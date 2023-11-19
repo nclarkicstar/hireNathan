@@ -10,23 +10,45 @@
         color: #ffffff;
         font-size: 1rem;
         font-family: Arial, sans-serif;
-        line-height: 1.6;
-        text-align: center;
         margin: 0;
         padding: 0;
+        height: 100vh;
+        display: flex; /* Add this */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        text-align: center; /* Center text */
+      }
+
+      .back-arrow {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: #ffffff;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+      }
+
+      .back-arrow img {
+        margin-right: 5px;
+        width: 3rem;
+      }
+
+      .content {
+        /* New class for main content */
+        text-align: center;
       }
     </style>
   </head>
-  <body
-    style="
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    "
-  >
-    <div style="text-align: center">
+  <body>
+    <!-- Back arrow and text -->
+    <a href="index.html" class="back-arrow">
+      <img src="/images/back.png" alt="Back" />
+      Return to my page
+    </a>
+
+    <!-- Main content wrapper -->
+    <div class="content">
       <a
         href="documents/contactCard.vcf"
         style="text-decoration: none; display: block; color: #ffffff"
